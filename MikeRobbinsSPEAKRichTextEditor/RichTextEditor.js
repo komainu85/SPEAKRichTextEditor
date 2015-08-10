@@ -13,10 +13,12 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.set("width", null);
             this.set("height", null);
 
+        },
+
+        UpdateText: function (content) {
+            this.viewModel.text(content);
         }
-
     });
-
 
     var view = Sitecore.Definitions.Views.ControlView.extend({
         initialize: function (options) {
@@ -28,10 +30,18 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             tinyMCE.init({
                 selector: "#mytextarea",
                 height: this.model.viewModel.height,
-                width: this.model.viewModel.width
-            });
+                width: this.model.viewModel.width,
+                speakContext: this,
+                setup : function(ed) {
+                    ed.on('change',function(e, that) {
+                        e.target.settings.speakContext.model.UpdateText(e.target.getContent());
+                    })}
+
+                });
 
         }
+
+
     });
 
     Sitecore.Factories.createComponent("RichTextEditor", model, view, ".sc-RichTextEditor");
