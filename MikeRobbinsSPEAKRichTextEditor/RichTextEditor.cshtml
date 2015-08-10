@@ -8,11 +8,11 @@
     rendering.Class = "sc-RichTextEditor";
     rendering.Requires.Script("client", "RichTextEditor.js");
 
-    rendering.SetAttribute("data-sc-height", rendering.GetString("Height", "Height", string.Empty));
-    rendering.SetAttribute("data-sc-width", rendering.GetString("Width", "Width", string.Empty));
+    rendering.Attributes["data-sc-height"]= rendering.GetString("Height", "Height", string.Empty);
+    rendering.Attributes["data-sc-width"]= rendering.GetString("Width", "Width", string.Empty);
 
     var htmlAttributes = rendering.HtmlAttributes;
 }
-<div @htmlAttributes>
-    <textarea id="mytextarea"></textarea>
+<div>
+    <textarea @htmlAttributes id="mytextarea"></textarea>
 </div>

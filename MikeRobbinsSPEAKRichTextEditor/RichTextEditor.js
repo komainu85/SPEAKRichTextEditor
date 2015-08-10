@@ -21,14 +21,14 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
     var view = Sitecore.Definitions.Views.ControlView.extend({
         initialize: function (options) {
             this._super();
-
+            this.model.set("text", this.$el.val());
             this.model.set("width", this.$el.data("sc-width"));
             this.model.set("height", this.$el.data("sc-height"));
 
             tinyMCE.init({
                 selector: "#mytextarea",
-                height: this.attributes["height"],
-                width: this.attributes["width"]
+                height: this.model.viewModel.height,
+                width: this.model.viewModel.width
             });
 
         }
