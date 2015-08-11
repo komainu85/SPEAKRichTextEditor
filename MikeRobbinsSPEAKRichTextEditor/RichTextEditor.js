@@ -38,8 +38,8 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
 
             tinyMCE.init({
                 selector: id,
-                height: this.model.viewModel.height,
-                width: this.model.viewModel.width,
+                height: this.model.viewModel.height(),
+                width: this.model.viewModel.width(),
                 speakContext: this,
                 setup: function (ed) {
                     ed.on('change', function (e, that) {
