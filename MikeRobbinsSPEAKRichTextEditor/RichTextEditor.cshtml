@@ -14,5 +14,5 @@
     var htmlAttributes = rendering.HtmlAttributes;
 }
 <div>
-    <textarea @htmlAttributes id="mytextarea"></textarea>
+    <textarea @htmlAttributes id="@rendering.GetString("Id", "Id", string.Empty)"></textarea>
 </div>

@@ -9,10 +9,16 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
     var model = Sitecore.Definitions.Models.ControlModel.extend({
         initialize: function (options) {
             this._super();
-
             this.set("width", null);
             this.set("height", null);
 
+            this.on("change:text", this.UpdateRichText, this);
+        },
+
+        UpdateRichText: function (context) {
+            if (context.viewModel.text != null) {
+                tinyMCE.get(context.id).setContent(context.viewModel.text())
+            }
         },
 
         UpdateText: function (content) {
@@ -26,18 +32,21 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.model.set("text", this.$el.val());
             this.model.set("width", this.$el.data("sc-width"));
             this.model.set("height", this.$el.data("sc-height"));
+            this.model.set("id", this.$el.data("sc-id"));
+
+            var id = "#" + this.model.viewModel.id();
 
             tinyMCE.init({
-                selector: "#mytextarea",
+                selector: id,
                 height: this.model.viewModel.height,
                 width: this.model.viewModel.width,
                 speakContext: this,
-                setup : function(ed) {
-                    ed.on('change',function(e, that) {
+                setup: function (ed) {
+                    ed.on('change', function (e, that) {
                         e.target.settings.speakContext.model.UpdateText(e.target.getContent());
-                    })}
-
-                });
+                    })
+                }
+            });
 
         }
 
