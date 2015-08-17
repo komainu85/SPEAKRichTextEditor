@@ -44,6 +44,7 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
                 selector: id,
                 height: this.model.viewModel.height(),
                 width: this.model.viewModel.width(),
+                browser_spellcheck: this.model.viewModel.browserspellcheck(),
                 speakContext: this,
                 setup: function (ed) {
                     ed.on('change', function (e, that) {
