@@ -11,6 +11,8 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this._super();
             this.set("width", null);
             this.set("height", null);
+            this.set("browsers", "msie,gecko,safari,opera");
+            this.set("language", "en");
 
             this.on("change:text", this.UpdateRichText, this);
         },
@@ -33,6 +35,9 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.model.set("width", this.$el.data("sc-width"));
             this.model.set("height", this.$el.data("sc-height"));
             this.model.set("id", this.$el.data("sc-id"));
+
+            this.model.set("browsers", this.$el.data("sc-browsers"));
+            this.model.set("language", this.$el.data("sc-language"));
 
             var id = "#" + this.model.viewModel.id();
 

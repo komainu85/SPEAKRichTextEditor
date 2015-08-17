@@ -52,29 +52,6 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Dlls.8.0.150427.8.0.150427\lib\Sitecore.ContentSearch.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Dlls.8.0.150427.8.0.150427\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Kernel, Version=8.0.5138.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Dlls.8.0.150427.8.0.150427\lib\Sitecore.Kernel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.8.0.150427.8.0.150427\lib\Sitecore.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Mvc.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.8.0.150427.8.0.150427\lib\Sitecore.Mvc.Analytics.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Speak.Client">
-      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Client.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,6 +98,82 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="RichTextEditor.js" />
+    <Content Include="tinymce\langs\ar.js" />
+    <Content Include="tinymce\langs\ar_SA.js" />
+    <Content Include="tinymce\langs\az.js" />
+    <Content Include="tinymce\langs\be.js" />
+    <Content Include="tinymce\langs\bg_BG.js" />
+    <Content Include="tinymce\langs\bn_BD.js" />
+    <Content Include="tinymce\langs\bs.js" />
+    <Content Include="tinymce\langs\ca.js" />
+    <Content Include="tinymce\langs\cs.js" />
+    <Content Include="tinymce\langs\cy.js" />
+    <Content Include="tinymce\langs\da.js" />
+    <Content Include="tinymce\langs\de.js" />
+    <Content Include="tinymce\langs\de_AT.js" />
+    <Content Include="tinymce\langs\dv.js" />
+    <Content Include="tinymce\langs\el.js" />
+    <Content Include="tinymce\langs\en_CA.js" />
+    <Content Include="tinymce\langs\en_GB.js" />
+    <Content Include="tinymce\langs\es.js" />
+    <Content Include="tinymce\langs\es_MX.js" />
+    <Content Include="tinymce\langs\et.js" />
+    <Content Include="tinymce\langs\eu.js" />
+    <Content Include="tinymce\langs\fa.js" />
+    <Content Include="tinymce\langs\fa_IR.js" />
+    <Content Include="tinymce\langs\fi.js" />
+    <Content Include="tinymce\langs\fo.js" />
+    <Content Include="tinymce\langs\fr_FR.js" />
+    <Content Include="tinymce\langs\gd.js" />
+    <Content Include="tinymce\langs\gl.js" />
+    <Content Include="tinymce\langs\he_IL.js" />
+    <Content Include="tinymce\langs\hi_IN.js" />
+    <Content Include="tinymce\langs\hr.js" />
+    <Content Include="tinymce\langs\hu_HU.js" />
+    <Content Include="tinymce\langs\hy.js" />
+    <Content Include="tinymce\langs\id.js" />
+    <Content Include="tinymce\langs\is_IS.js" />
+    <Content Include="tinymce\langs\it.js" />
+    <Content Include="tinymce\langs\ja.js" />
+    <Content Include="tinymce\langs\kab.js" />
+    <Content Include="tinymce\langs\ka_GE.js" />
+    <Content Include="tinymce\langs\kk.js" />
+    <Content Include="tinymce\langs\km_KH.js" />
+    <Content Include="tinymce\langs\ko_KR.js" />
+    <Content Include="tinymce\langs\ku.js" />
+    <Content Include="tinymce\langs\ku_IQ.js" />
+    <Content Include="tinymce\langs\lb.js" />
+    <Content Include="tinymce\langs\lt.js" />
+    <Content Include="tinymce\langs\lv.js" />
+    <Content Include="tinymce\langs\ml.js" />
+    <Content Include="tinymce\langs\ml_IN.js" />
+    <Content Include="tinymce\langs\mn_MN.js" />
+    <Content Include="tinymce\langs\nb_NO.js" />
+    <Content Include="tinymce\langs\nl.js" />
+    <Content Include="tinymce\langs\pl.js" />
+    <Content Include="tinymce\langs\pt_BR.js" />
+    <Content Include="tinymce\langs\pt_PT.js" />
+    <Content Include="tinymce\langs\ro.js" />
+    <Content Include="tinymce\langs\ru.js" />
+    <Content Include="tinymce\langs\si_LK.js" />
+    <Content Include="tinymce\langs\sk.js" />
+    <Content Include="tinymce\langs\sl_SI.js" />
+    <Content Include="tinymce\langs\sr.js" />
+    <Content Include="tinymce\langs\sv_SE.js" />
+    <Content Include="tinymce\langs\ta.js" />
+    <Content Include="tinymce\langs\ta_IN.js" />
+    <Content Include="tinymce\langs\tg.js" />
+    <Content Include="tinymce\langs\th_TH.js" />
+    <Content Include="tinymce\langs\tr.js" />
+    <Content Include="tinymce\langs\tr_TR.js" />
+    <Content Include="tinymce\langs\tt.js" />
+    <Content Include="tinymce\langs\ug.js" />
+    <Content Include="tinymce\langs\uk.js" />
+    <Content Include="tinymce\langs\uk_UA.js" />
+    <Content Include="tinymce\langs\vi.js" />
+    <Content Include="tinymce\langs\vi_VN.js" />
+    <Content Include="tinymce\langs\zh_CN.js" />
+    <Content Include="tinymce\langs\zh_TW.js" />
     <Content Include="tinymce\license.txt" />
     <Content Include="tinymce\plugins\advlist\plugin.min.js" />
     <Content Include="tinymce\plugins\anchor\plugin.min.js" />
@@ -208,7 +261,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config" />
-    <Content Include="tinymce\langs\readme.md" />
     <Content Include="tinymce\skins\lightgray\fonts\tinymce-small.eot" />
     <Content Include="tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
     <Content Include="tinymce\skins\lightgray\fonts\tinymce-small.woff" />
