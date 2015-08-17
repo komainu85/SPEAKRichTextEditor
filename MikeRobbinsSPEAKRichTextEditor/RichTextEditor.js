@@ -11,9 +11,6 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this._super();
             this.set("width", null);
             this.set("height", null);
-            this.set("browsers", "msie,gecko,safari,opera");
-            this.set("language", "en");
-
             this.set("browserspellcheck", null);
             this.on("change:text", this.UpdateRichText, this);
         },
@@ -40,9 +37,6 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             var spell = this.$el.data("sc-browser-spellcheck") == "0";
 
             this.model.set("browserspellcheck", spell);
-
-            this.model.set("browsers", this.$el.data("sc-browsers"));
-            this.model.set("language", this.$el.data("sc-language"));
 
             var id = "#" + this.model.viewModel.id();
 
