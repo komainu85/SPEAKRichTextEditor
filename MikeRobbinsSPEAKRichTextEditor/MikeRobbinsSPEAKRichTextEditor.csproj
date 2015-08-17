@@ -215,6 +215,18 @@
     <Content Include="tinymce\skins\lightgray\fonts\tinymce.eot" />
     <Content Include="tinymce\skins\lightgray\fonts\tinymce.ttf" />
     <Content Include="tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <None Include="App_Data\Include\xMikeRobbins.SPEAKRTE.config" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Components\RichTextEditor.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Data.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Data\Text.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Design.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Design\Id.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor\Browser spellcheck.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor\Height.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor\Width.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\__Standard Values.item" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

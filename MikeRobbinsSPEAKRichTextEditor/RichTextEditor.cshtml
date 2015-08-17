@@ -6,10 +6,11 @@
     var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
 
     rendering.Class = "sc-RichTextEditor";
-    rendering.Requires.Script("client", "RichTextEditor.js");
+    rendering.Requires.Script("mikerobbins", "RichTextEditor.js");
 
     rendering.Attributes["data-sc-height"]= rendering.GetString("Height", "Height", string.Empty);
     rendering.Attributes["data-sc-width"]= rendering.GetString("Width", "Width", string.Empty);
+    rendering.Attributes["data-sc-browser-spellcheck"] = rendering.GetString("Browser spellcheck", "Browser spellcheck", string.Empty);
 
     var htmlAttributes = rendering.HtmlAttributes;
 }
