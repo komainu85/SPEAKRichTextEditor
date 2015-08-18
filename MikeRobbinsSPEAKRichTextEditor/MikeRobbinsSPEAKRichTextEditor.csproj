@@ -223,6 +223,7 @@
     <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Resize.item" />
     <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Width.item" />
     <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\__Standard Values.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Plugins.item" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
