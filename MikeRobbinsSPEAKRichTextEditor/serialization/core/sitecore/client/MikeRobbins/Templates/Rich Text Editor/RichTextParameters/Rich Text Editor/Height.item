@@ -1,40 +1,40 @@
 ----item----
 version: 1
-id: {F1211845-5D54-4C54-8521-8AD077B9DB2D}
+id: {4118DF1F-2C73-4A44-9C5B-E2FD406C161D}
 database: core
-path: /sitecore/client/MikeRobbins/Templates/RichTextParameters
-parent: {A7289EE3-978C-4694-AD6D-A2C0D10065F3}
-name: RichTextParameters
+path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor/RichTextParameters/Rich Text Editor/Height
+parent: {0A70B88F-713A-4548-8DCC-DF93A9ED8F62}
+name: Height
 master: {00000000-0000-0000-0000-000000000000}
-template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
-templatekey: Template
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
 ----field----
-field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
-name: __Base template
-key: __base template
-content-length: 38
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 16
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}
-----field----
-field: {F7D48A55-2158-4F02-9356-756654404F73}
-name: __Standard values
-key: __standard values
-content-length: 38
-
-{1E68C3DB-80E2-4DC7-A4C7-5737371EB174}
+Single-Line Text
 ----version----
 language: en
 version: 1
-revision: 36d0e3f9-9acd-4f22-9767-c5e6a761e71e
+revision: 5dd58044-7f95-4f31-a196-091652d970bf
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150807T110935Z
+20150807T114958Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-36d0e3f9-9acd-4f22-9767-c5e6a761e71e
+5dd58044-7f95-4f31-a196-091652d970bf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T110957Z
+20150818T122127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

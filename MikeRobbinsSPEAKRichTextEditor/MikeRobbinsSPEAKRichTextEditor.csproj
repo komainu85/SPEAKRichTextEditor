@@ -52,6 +52,24 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Kernel, Version=8.0.5138.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Client, Version=1.3.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Mvc">
+      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Web">
+      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -193,16 +211,18 @@
     <Content Include="tinymce\skins\lightgray\fonts\tinymce.woff" />
     <None Include="App_Data\Include\xMikeRobbins.SPEAKRTE.config" />
     <Content Include="serialization\core\sitecore\client\MikeRobbins\Components\RichTextEditor.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Data.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Data\Text.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Design.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Design\Id.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor\Browser spellcheck.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor\Height.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\Rich Text Editor\Width.item" />
-    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\RichTextParameters\__Standard Values.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Data.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Data\Text.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Design.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Design\Id.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Browser spellcheck.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Height.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Resize.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\Rich Text Editor\Width.item" />
+    <Content Include="serialization\core\sitecore\client\MikeRobbins\Templates\Rich Text Editor\RichTextParameters\__Standard Values.item" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

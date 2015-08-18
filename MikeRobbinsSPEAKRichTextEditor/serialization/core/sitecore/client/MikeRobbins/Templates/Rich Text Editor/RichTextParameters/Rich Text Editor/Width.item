@@ -1,14 +1,21 @@
 ----item----
 version: 1
-id: {2E6EBA3C-420D-4B3F-B33B-F97EC4B31BC8}
+id: {437B68AA-FDC9-4B10-9EBF-7FE0499A82D0}
 database: core
-path: /sitecore/client/MikeRobbins/Templates/RichTextParameters/Data
-parent: {F1211845-5D54-4C54-8521-8AD077B9DB2D}
-name: Data
+path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor/RichTextParameters/Rich Text Editor/Width
+parent: {0A70B88F-713A-4548-8DCC-DF93A9ED8F62}
+name: Width
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 16
+
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -19,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: eaaa31b1-7b6e-44df-aeab-b9f0dab7a97b
+revision: e0fe668e-8869-4628-9b2d-8e7f45912c5e
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -34,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150810T100925Z
+20150807T114958Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eaaa31b1-7b6e-44df-aeab-b9f0dab7a97b
+e0fe668e-8869-4628-9b2d-8e7f45912c5e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150810T100925Z
+20150818T122127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

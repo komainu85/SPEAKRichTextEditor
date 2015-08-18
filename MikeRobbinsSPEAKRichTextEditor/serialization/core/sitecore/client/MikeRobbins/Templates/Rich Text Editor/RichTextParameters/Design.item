@@ -1,18 +1,25 @@
 ----item----
 version: 1
-id: {0A70B88F-713A-4548-8DCC-DF93A9ED8F62}
+id: {456E9C70-5040-4972-99B1-CFD0792D5418}
 database: core
-path: /sitecore/client/MikeRobbins/Templates/RichTextParameters/Rich Text Editor
+path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor/RichTextParameters/Design
 parent: {F1211845-5D54-4C54-8521-8AD077B9DB2D}
-name: Rich Text Editor
+name: Design
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
 ----version----
 language: en
 version: 1
-revision: 9da836e4-402f-43b5-a0a3-a5aad51f7212
+revision: d83b4666-fd08-4ced-b3d1-ca48e868f922
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -27,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150807T110952Z
+20150810T102511Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9da836e4-402f-43b5-a0a3-a5aad51f7212
+d83b4666-fd08-4ced-b3d1-ca48e868f922
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T110952Z
+20150810T102511Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -12,12 +12,13 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.set("width", null);
             this.set("height", null);
             this.set("browserspellcheck", null);
+            this.set("resize", null);
             this.on("change:text", this.UpdateRichText, this);
         },
 
         UpdateRichText: function (context) {
             if (context.viewModel.text != null) {
-                tinyMCE.get(context.id).setContent(context.viewModel.text())
+                tinyMCE.get(context.id).setContent(context.viewModel.text());
             }
         },
 
@@ -32,6 +33,7 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.model.set("text", this.$el.val());
             this.model.set("width", this.$el.data("sc-width"));
             this.model.set("height", this.$el.data("sc-height"));
+            this.model.set("resize", this.$el.data("sc-resize"));
             this.model.set("id", this.$el.data("sc-id"));
 
             var spell = this.$el.data("sc-browser-spellcheck") == "0";
@@ -44,12 +46,13 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
                 selector: id,
                 height: this.model.viewModel.height(),
                 width: this.model.viewModel.width(),
+                resize: this.model.viewModel.resize(),
                 browser_spellcheck: this.model.viewModel.browserspellcheck(),
                 speakContext: this,
                 setup: function (ed) {
-                    ed.on('change', function (e, that) {
+                    ed.on('change', function(e) {
                         e.target.settings.speakContext.model.UpdateText(e.target.getContent());
-                    })
+                    });
                 }
             });
 

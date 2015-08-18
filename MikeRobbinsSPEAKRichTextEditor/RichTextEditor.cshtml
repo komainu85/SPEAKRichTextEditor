@@ -11,10 +11,10 @@
     rendering.Attributes["data-sc-height"]= rendering.GetString("Height", "Height", string.Empty);
     rendering.Attributes["data-sc-width"]= rendering.GetString("Width", "Width", string.Empty);
     rendering.Attributes["data-sc-browser-spellcheck"] = rendering.GetString("Browser spellcheck", "Browser spellcheck", string.Empty);
+    rendering.Attributes["data-sc-resize"] = rendering.GetString("Resize", "Resize", string.Empty);
 
-    rendering.Attributes["data-sc-browsers"] = rendering.GetString("Browsers", "Browsers", string.Empty);
-    rendering.Attributes["data-sc-language"] = rendering.GetString("Language", "Language", string.Empty);
-    
+    var resize = rendering.GetString("Resize", "Resize", string.Empty);
+
     var htmlAttributes = rendering.HtmlAttributes;
 }
 <div>
