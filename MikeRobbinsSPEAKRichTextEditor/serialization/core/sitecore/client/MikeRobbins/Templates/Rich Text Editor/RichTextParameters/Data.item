@@ -1,32 +1,25 @@
 ----item----
 version: 1
-id: {3F2230C9-319B-4DAE-8C0C-98C8EC640F44}
+id: {2E6EBA3C-420D-4B3F-B33B-F97EC4B31BC8}
 database: core
-path: /sitecore/client/MikeRobbins/Templates/RichTextParameters/Rich Text Editor/Browser spellcheck
-parent: {0A70B88F-713A-4548-8DCC-DF93A9ED8F62}
-name: Browser spellcheck
+path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor/RichTextParameters/Data
+parent: {F1211845-5D54-4C54-8521-8AD077B9DB2D}
+name: Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {455A3E98-A627-4B40-8035-E683A0331AC7}
-templatekey: Template field
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
-----field----
-field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
-name: Type
-key: type
-content-length: 8
-
-Checkbox
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-300
+200
 ----version----
 language: en
 version: 1
-revision: 15b2fc2e-8556-4739-8c96-eeea7cf1fee9
+revision: eaaa31b1-7b6e-44df-aeab-b9f0dab7a97b
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -41,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150817T121931Z
+20150810T100925Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-15b2fc2e-8556-4739-8c96-eeea7cf1fee9
+eaaa31b1-7b6e-44df-aeab-b9f0dab7a97b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150817T121947Z
+20150810T100925Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
