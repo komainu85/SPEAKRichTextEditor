@@ -49,6 +49,7 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
                 resize: this.model.viewModel.resize(),
                 browser_spellcheck: this.model.viewModel.browserspellcheck(),
                 speakContext: this,
+                plugins: 'code',
                 setup: function (ed) {
                     ed.on('change', function(e) {
                         e.target.settings.speakContext.model.UpdateText(e.target.getContent());
