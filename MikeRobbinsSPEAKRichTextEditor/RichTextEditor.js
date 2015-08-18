@@ -13,6 +13,7 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.set("height", null);
             this.set("browserspellcheck", null);
             this.set("resize", null);
+            this.set("plugins", null);
             this.on("change:text", this.UpdateRichText, this);
         },
 
@@ -35,6 +36,7 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
             this.model.set("height", this.$el.data("sc-height"));
             this.model.set("resize", this.$el.data("sc-resize"));
             this.model.set("id", this.$el.data("sc-id"));
+            this.model.set("plugins", this.$el.data("sc-plugins"));
 
             var spell = this.$el.data("sc-browser-spellcheck") == "0";
 
@@ -49,6 +51,7 @@ define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
                 resize: this.model.viewModel.resize(),
                 browser_spellcheck: this.model.viewModel.browserspellcheck(),
                 speakContext: this,
+                plugins: this.model.viewModel.plugins(),
                 setup: function (ed) {
                     ed.on('change', function(e) {
                         e.target.settings.speakContext.model.UpdateText(e.target.getContent());

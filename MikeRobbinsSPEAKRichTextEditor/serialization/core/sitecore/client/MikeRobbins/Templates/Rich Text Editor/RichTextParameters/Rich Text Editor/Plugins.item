@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {1E68C3DB-80E2-4DC7-A4C7-5737371EB174}
+id: {F5E016C8-3756-46DA-82B9-0036F8A896CA}
 database: core
-path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor/RichTextParameters/__Standard Values
-parent: {F1211845-5D54-4C54-8521-8AD077B9DB2D}
-name: __Standard Values
+path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor/RichTextParameters/Rich Text Editor/Plugins
+parent: {0A70B88F-713A-4548-8DCC-DF93A9ED8F62}
+name: Plugins
 master: {00000000-0000-0000-0000-000000000000}
-template: {F1211845-5D54-4C54-8521-8AD077B9DB2D}
-templatekey: RichTextParameters
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 16
+
+Single-Line Text
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
 ----version----
 language: en
 version: 1
-revision: f1402252-8917-40b4-8ce5-8a589c3e53fe
+revision: 91ad7314-1ee9-4390-ab5b-90e9c950d19d
 
 ----field----
-field: {9EE3D4AD-768C-4B45-88A7-E38D868BFA91}
-name: Resize
-key: resize
-content-length: 4
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 57
 
-both
-----field----
-field: {F5E016C8-3756-46DA-82B9-0036F8A896CA}
-name: Plugins
-key: plugins
-content-length: 4
-
-code
+See http://www.tinymce.com/wiki.php/Configuration:plugins
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,7 +48,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150807T110957Z
+20150818T124537Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f1402252-8917-40b4-8ce5-8a589c3e53fe
+91ad7314-1ee9-4390-ab5b-90e9c950d19d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150818T124553Z
+20150818T124631Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
