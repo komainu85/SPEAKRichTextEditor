@@ -1,21 +1,20 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
 @using Sitecore.Web.UI.Controls.Common.UserControls
-@model RenderingModel
+@model MikeRobbinsSPEAKRichTextEditor.Models.RichTextEditorRenderingModel
 @{
-    var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+    var resolver = Html.Sitecore().Controls().GetParametersResolver(Model.Rendering);
 
-    rendering.Class = "sc-RichTextEditor";
-    rendering.Requires.Script("mikerobbins", "RichTextEditor.js");
+    Model.Class.Append("sc-RichTextEditor");
+    Model.Requires.Script("mikerobbins", "RichTextEditor.js");
 
-    rendering.Attributes["data-sc-height"]= rendering.GetString("Height", "Height", string.Empty);
-    rendering.Attributes["data-sc-width"]= rendering.GetString("Width", "Width", string.Empty);
-    rendering.Attributes["data-sc-browser-spellcheck"] = rendering.GetString("Browser spellcheck", "Browser spellcheck", string.Empty);
-    rendering.Attributes["data-sc-resize"] = rendering.GetString("Resize", "Resize", string.Empty);
-    rendering.Attributes["data-sc-plugins"] = rendering.GetString("Plugins", "Plugins", string.Empty);
+    Model.Properties["height"] = Model.Height;
+    Model.Properties["width"]= Model.Width;
+    @*rendering.Properties["browser-spellcheck"] = rendering.GetString("Browser spellcheck", "Browser spellcheck", string.Empty);*@
+    Model.Properties["resize"] = Model.Resize;
+    Model.Properties["plugins"] = Model.Plugins;
 
-    var htmlAttributes = rendering.HtmlAttributes;
 }
 <div>
-    <textarea @htmlAttributes id="@rendering.GetString("Id", "Id", string.Empty)"></textarea>
+    <textarea @Model.HtmlAttributes id="@Model.ControlId"></textarea>
 </div>
