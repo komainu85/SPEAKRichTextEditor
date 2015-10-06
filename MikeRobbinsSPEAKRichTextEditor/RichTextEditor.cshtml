@@ -1,12 +1,13 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls
 @using Sitecore.Web.UI.Controls.Common.UserControls
 @model MikeRobbinsSPEAKRichTextEditor.Models.RichTextEditorRenderingModel
 @{
-    var resolver = Html.Sitecore().Controls().GetParametersResolver(Model.Rendering);
-
     Model.Class.Append("sc-RichTextEditor");
-    Model.Requires.Script("mikerobbins", "RichTextEditor.js");
+    
+Model.Requires.Remove(new RequireDescriptor(RequireType.JavaScript, "components", "RichTextEditor.js"));
+Model.Requires.Add(new RequireDescriptor(RequireType.JavaScript, "mikerobbins","RichTextEditor.js"));
 
     Model.Properties["height"] = Model.Height;
     Model.Properties["width"]= Model.Width;

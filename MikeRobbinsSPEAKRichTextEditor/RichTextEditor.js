@@ -1,20 +1,37 @@
 ﻿(function (Speak) {
     require.config({
         paths: {
-            "tinyMCE": "/sitecore/shell/client/MikeRobbins/Components/RichTextEditor/tinymce/tinymce.min"
+            tinyMCE: "/sitecore/shell/client/MikeRobbins/Components/RichTextEditor/tinymce/tinymce.min",
+            collection: "/sitecore/shell/client/Business Component Library/version 2/Layouts/Renderings/Mixins/Collection"
         }
     });
 
-    Speak.component(["tinyMCE"], function (tinyMCE) {
+    Speak.component(["collection", "tinyMCE"], function (Collection, tinyMCE) {
         return Speak.extend({}, Collection.prototype, {
-            initialize: function (options) {
-                this._super();
+            initialized: function () {
+
                 this.defineProperty("width", null);
                 this.defineProperty("height", null);
                 this.defineProperty("browserspellcheck", null);
                 this.defineProperty("resize", null);
                 this.defineProperty("plugins", null);
                 this.on("change:text", this.UpdateRichText, this);
+
+  
+                tinymce.init({
+                    selector: this.id,
+                    height: this.Height,
+                    width: this.Width,
+                    resize: this.Resize,
+                    browser_spellcheck: this.Browserspellcheck,
+                    speakContext: this,
+                    plugins: this.Plugins,
+                    setup: function (ed) {
+                        ed.on('change', function (e) {
+                            e.target.settings.speakContext.model.UpdateText(e.target.getContent());
+                        });
+                    }
+                });
             },
 
             UpdateRichText: function (context) {
