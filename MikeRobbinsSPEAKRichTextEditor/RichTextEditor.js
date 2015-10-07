@@ -11,12 +11,14 @@
             initialized: function () {
                 this.on("change:text", this.UpdateRichText);
 
+                var spell = this.Browserspellcheck == "0";
+
                 tinymce.init({
                     selector: "#" + this.id,
                     height: this.Height,
                     width: this.Width,
                     resize: this.Resize,
-                    browser_spellcheck: this.Browserspellcheck,
+                    browser_spellcheck: spell,
                     speakContext: this,
                     plugins: this.Plugins,
                     setup: function (ed) {
