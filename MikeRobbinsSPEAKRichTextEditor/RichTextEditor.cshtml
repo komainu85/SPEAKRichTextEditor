@@ -6,15 +6,8 @@
 @{
     Model.Class.Append("sc-RichTextEditor");
     
-Model.Requires.Remove(new RequireDescriptor(RequireType.JavaScript, "components", "RichTextEditor.js"));
-Model.Requires.Add(new RequireDescriptor(RequireType.JavaScript, "mikerobbins","RichTextEditor.js"));
-
-    Model.Properties["height"] = Model.Height;
-    Model.Properties["width"]= Model.Width;
-    @*rendering.Properties["browser-spellcheck"] = rendering.GetString("Browser spellcheck", "Browser spellcheck", string.Empty);*@
-    Model.Properties["resize"] = Model.Resize;
-    Model.Properties["plugins"] = Model.Plugins;
-
+    Model.Requires.Remove(new RequireDescriptor(RequireType.JavaScript, "components", "RichTextEditor.js"));
+    Model.Requires.Add(new RequireDescriptor(RequireType.JavaScript, "mikerobbins","RichTextEditor.js"));
 }
 <div>
     <textarea @Model.HtmlAttributes id="@Model.ControlId"></textarea>
