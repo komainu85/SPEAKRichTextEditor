@@ -12,7 +12,7 @@ templatekey: RichTextParameters
 ----version----
 language: en
 version: 1
-revision: f1402252-8917-40b4-8ce5-8a589c3e53fe
+revision: 26b97647-2f82-400e-abde-29640af96b31
 
 ----field----
 field: {9EE3D4AD-768C-4B45-88A7-E38D868BFA91}
@@ -22,7 +22,7 @@ content-length: 4
 
 both
 ----field----
-field: {F5E016C8-3756-46DA-82B9-0036F8A896CA}
+field: {CA5E8EC0-7A7D-4702-8BEE-848BC28D4F93}
 name: Plugins
 key: plugins
 content-length: 4
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f1402252-8917-40b4-8ce5-8a589c3e53fe
+26b97647-2f82-400e-abde-29640af96b31
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150818T124553Z
+20150827T112818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

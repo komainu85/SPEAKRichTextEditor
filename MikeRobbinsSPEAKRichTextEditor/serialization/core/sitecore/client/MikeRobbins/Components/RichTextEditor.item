@@ -3,7 +3,7 @@ version: 1
 id: {4416909A-5D23-408D-AB2C-23810E0EC4B5}
 database: core
 path: /sitecore/client/MikeRobbins/Components/RichTextEditor
-parent: {C404E69C-6E1E-4D63-A0B1-20596884F929}
+parent: {27FB67D2-2101-4212-8046-24DB00EC8E79}
 name: RichTextEditor
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
@@ -16,6 +16,13 @@ key: path
 content-length: 82
 
 /sitecore/shell/client/MikeRobbins/Components/RichTextEditor/RichTextEditor.cshtml
+----field----
+field: {DDAB263E-B42E-419A-AA6F-081B7393CA38}
+name: Model
+key: model
+content-length: 97
+
+MikeRobbinsSPEAKRichTextEditor.Models.RichTextEditorRenderingModel,MikeRobbinsSPEAKRichTextEditor
 ----field----
 field: {7D24E54F-5C16-4314-90C9-6051AA1A7DA1}
 name: Parameters Template
@@ -33,7 +40,7 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 6aec4472-766d-4f19-b269-0aee19ab2dbf
+revision: 8a6569cf-7f59-4f51-a10f-fff7b7a038db
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6aec4472-766d-4f19-b269-0aee19ab2dbf
+8a6569cf-7f59-4f51-a10f-fff7b7a038db
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T115905Z
+20150924T120015Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
