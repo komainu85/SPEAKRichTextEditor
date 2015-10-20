@@ -3,7 +3,7 @@ version: 1
 id: {B949143D-6CDF-4B89-B79F-435AA2316F5F}
 database: core
 path: /sitecore/client/MikeRobbins/Templates/Rich Text Editor
-parent: {A7289EE3-978C-4694-AD6D-A2C0D10065F3}
+parent: {FFB39A4F-7D23-4E8A-92F8-F75CD4D81501}
 name: Rich Text Editor
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}

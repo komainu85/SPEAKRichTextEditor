@@ -1,68 +1,41 @@
-﻿require.config({
-    paths: {
-        "tinymce": "/sitecore/shell/client/MikeRobbins/Components/RichTextEditor/tinymce/tinymce.min"
-    }
-});
+﻿(function (Speak) {
+    require.config({
+        paths: {
+            tinyMCE: "/sitecore/shell/client/MikeRobbins/Components/RichTextEditor/tinymce/tinymce.min",
+            collection: "/sitecore/shell/client/Business Component Library/version 2/Layouts/Renderings/Mixins/Collection"
+        }
+    });
 
-define(["sitecore", "jquery", "tinymce"], function (Sitecore, jQuery, tinymce) {
+    Speak.component(["collection", "tinyMCE"], function (Collection, tinyMCE) {
+        return Speak.extend({}, Collection.prototype, {
+            initialized: function () {
+                this.on("change:text", this.UpdateRichText);
 
-    var model = Sitecore.Definitions.Models.ControlModel.extend({
-        initialize: function (options) {
-            this._super();
-            this.set("width", null);
-            this.set("height", null);
-            this.set("browserspellcheck", null);
-            this.set("resize", null);
-            this.set("plugins", null);
-            this.on("change:text", this.UpdateRichText, this);
-        },
+                var spell = this.Browserspellcheck == "0";
 
-        UpdateRichText: function (context) {
-            if (context.viewModel.text != null) {
-                tinyMCE.get(context.id).setContent(context.viewModel.text());
+                tinymce.init({
+                    selector: "#" + this.id,
+                    height: this.Height,
+                    width: this.Width,
+                    resize: this.Resize,
+                    browser_spellcheck: spell,
+                    speakContext: this,
+                    plugins: this.Plugins,
+                    setup: function (ed) {
+                        ed.on('change', function (e) {
+                            e.target.settings.speakContext.UpdateText(e.target.getContent());
+                        });
+                    }
+                });
+            },
+
+            UpdateRichText: function () {
+                tinymce.get(this.id).setContent(this.Text);
+            },
+
+            UpdateText: function (content) {
+                this.Text = content;
             }
-        },
-
-        UpdateText: function (content) {
-            this.viewModel.text(content);
-        }
-    });
-
-    var view = Sitecore.Definitions.Views.ControlView.extend({
-        initialize: function (options) {
-            this._super();
-            this.model.set("text", this.$el.val());
-            this.model.set("width", this.$el.data("sc-width"));
-            this.model.set("height", this.$el.data("sc-height"));
-            this.model.set("resize", this.$el.data("sc-resize"));
-            this.model.set("id", this.$el.data("sc-id"));
-            this.model.set("plugins", this.$el.data("sc-plugins"));
-
-            var spell = this.$el.data("sc-browser-spellcheck") == "0";
-
-            this.model.set("browserspellcheck", spell);
-
-            var id = "#" + this.model.viewModel.id();
-
-            tinyMCE.init({
-                selector: id,
-                height: this.model.viewModel.height(),
-                width: this.model.viewModel.width(),
-                resize: this.model.viewModel.resize(),
-                browser_spellcheck: this.model.viewModel.browserspellcheck(),
-                speakContext: this,
-                plugins: this.model.viewModel.plugins(),
-                setup: function (ed) {
-                    ed.on('change', function(e) {
-                        e.target.settings.speakContext.model.UpdateText(e.target.getContent());
-                    });
-                }
-            });
-
-        }
-
-
-    });
-
-    Sitecore.Factories.createComponent("RichTextEditor", model, view, ".sc-RichTextEditor");
-});
+        });
+    }, "RichTextEditor");
+})(Sitecore.Speak);

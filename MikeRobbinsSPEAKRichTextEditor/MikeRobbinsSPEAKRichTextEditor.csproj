@@ -52,23 +52,28 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=8.0.5138.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=8.0.5193.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Core.1.0\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Mvc.1.0\lib\Sitecore.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Speak.Client, Version=1.3.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Client.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Speak.1.0\lib\Sitecore.Speak.Client.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Speak.Mvc">
-      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Mvc.dll</HintPath>
+    <Reference Include="Sitecore.Speak.Components">
+      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins81mvp\Website\bin\Sitecore.Speak.Components.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Speak.Web">
-      <HintPath>..\..\..\..\inetpub\wwwroot\MikeRobbins8u4\Website\bin\Sitecore.Speak.Web.dll</HintPath>
+    <Reference Include="Sitecore.Speak.Mvc, Version=1.3.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Speak.1.0\lib\Sitecore.Speak.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -193,6 +198,7 @@
     <Content Include="tinymce\tinymce.min.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\RichTextEditorRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

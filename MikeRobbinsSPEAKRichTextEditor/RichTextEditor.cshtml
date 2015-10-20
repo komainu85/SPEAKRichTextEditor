@@ -1,21 +1,11 @@
-﻿@using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@using Sitecore.Web.UI.Controls.Common.UserControls
-@model RenderingModel
+﻿@using Sitecore.Web.UI.Controls
+@model MikeRobbinsSPEAKRichTextEditor.Models.RichTextEditorRenderingModel
 @{
-    var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
-
-    rendering.Class = "sc-RichTextEditor";
-    rendering.Requires.Script("mikerobbins", "RichTextEditor.js");
-
-    rendering.Attributes["data-sc-height"]= rendering.GetString("Height", "Height", string.Empty);
-    rendering.Attributes["data-sc-width"]= rendering.GetString("Width", "Width", string.Empty);
-    rendering.Attributes["data-sc-browser-spellcheck"] = rendering.GetString("Browser spellcheck", "Browser spellcheck", string.Empty);
-    rendering.Attributes["data-sc-resize"] = rendering.GetString("Resize", "Resize", string.Empty);
-    rendering.Attributes["data-sc-plugins"] = rendering.GetString("Plugins", "Plugins", string.Empty);
-
-    var htmlAttributes = rendering.HtmlAttributes;
+    Model.Class.Append("sc-RichTextEditor");
+    
+    Model.Requires.Remove(new RequireDescriptor(RequireType.JavaScript, "components", "RichTextEditor.js"));
+    Model.Requires.Add(new RequireDescriptor(RequireType.JavaScript, "mikerobbins","RichTextEditor.js"));
 }
 <div>
-    <textarea @htmlAttributes id="@rendering.GetString("Id", "Id", string.Empty)"></textarea>
+    <textarea @Model.HtmlAttributes id="@Model.ControlId"></textarea>
 </div>
