@@ -2,11 +2,11 @@
     require.config({
         paths: {
             tinyMCE: "/sitecore/shell/client/MikeRobbins/Components/RichTextEditor/tinymce/tinymce.min",
-            collection: "/sitecore/shell/client/Business Component Library/version 2/Layouts/Renderings/Mixins/Collection"
+            bclCollection: "/sitecore/shell/client/Business Component Library/version 2/Layouts/Renderings/Mixins/Collection"
         }
     });
 
-    Speak.component(["collection", "tinyMCE"], function (Collection, tinyMCE) {
+    Speak.component(["bclCollection", "tinyMCE"], function (Collection, tinyMCE) {
         return Speak.extend({}, Collection.prototype, {
             initialized: function () {
                 this.on("change:text", this.UpdateRichText);
